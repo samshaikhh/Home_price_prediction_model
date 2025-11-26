@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF 8">
+    <title>HOME PRICE PREDICTION</title>
+</head>
+
+<body>
+    <div class="Calculate">
+        <h2>PREDICT HOME PRICE IN ONE SECOND</h2>
+        <form action="{{url_for('house')}}" method="POST">
+            <input type="number" name="area" placeholder="AREA (SQFT)" required />
+            <input type="number" name="bedrooms" placeholder="bedrooms" required= />
+            <input type="number" name="bathrooms" placeholder="bathrooms" required= />
+            <input type="number" name="location_rating" placeholder="location_rating" required/>
+            <input type="number" name="age" placeholder="age" required/>
+
+            <button type="submit" class="btn-btn-primary btn-block btn-large">Predict</button>
+        </form>
+    </div>
+    <br>
+    Your home price could be {{predict_price}} lakh as you expect.
+</body>
+
+</html>
