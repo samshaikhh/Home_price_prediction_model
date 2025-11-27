@@ -1,1 +1,5 @@
 joblib
+numpy 
+flask
+gunicorn
+scikit-learn
